@@ -1,0 +1,69 @@
+- .gitignore
+- Backend
+  - .env
+  - .gitignore
+  - package-lock.json
+  - package.json
+  - src
+    - app.js
+    - controllers
+      - auth.controller.js
+      - message.controller.js
+    - lib
+      - cloudinary.js
+      - db.js
+      - utils.js
+    - middlewares
+      - auth.middleware.js
+    - models
+      - message.model.js
+      - user.model.js
+    - routes
+      - auth.route.js
+      - message.route.js
+- Frontend
+  - .gitignore
+  - eslint.config.js
+  - index.html
+  - package-lock.json
+  - package.json
+  - postcss.config.js
+  - public
+    - user.png
+    - vite.svg
+  - README.md
+  - src
+    - App.jsx
+    - components
+      - AuthImagePattern.jsx
+      - ChatContainer.jsx
+      - ChatHeader.jsx
+      - MessageInput.jsx
+      - Navbar.jsx
+      - NoChatSelected.jsx
+      - Sidebar.jsx
+      - skeletons
+        - MessageSkeleton.jsx
+        - SidebarSkeleton.jsx
+    - constants
+      - index.js
+    - index.css
+    - lib
+      - axios.js
+    - main.jsx
+    - pages
+      - Homepage.jsx
+      - LoginPage.jsx
+      - ProfilePage.jsx
+      - SettingsPage.jsx
+      - SignUpPage.jsx
+    - store
+      - useAuthStore.js
+      - useChatStore.js
+      - useThemeStore.js
+  - tailwind.config.js
+  - vite.config.js
+- index.html
+- main.js
+- README.md
+- temp.txt
