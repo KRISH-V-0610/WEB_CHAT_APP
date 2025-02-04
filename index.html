@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Learning for Kids!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        body {
+            background: #f0f7ff;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(45deg, #FF9933, #FF6633);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .nav {
+            background: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .nav-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-button:hover {
+            transform: scale(1.1);
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-button {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>🌟 Fun Learning Adventure! 🌟</h1>
+    </header>
+
+    <nav class="nav">
+        <button class="nav-button">Math Games 🔢</button>
+        <button class="nav-button">Reading Fun 📚</button>
+        <button class="nav-button">Science Lab 🔬</button>
+        <button class="nav-button">Art Corner 🎨</button>
+    </nav>
+
+    <main class="main-content">
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Math Games">
+            <h3>Fun with Numbers!</h3>
+            <p>Play exciting math games and learn while having fun!</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Reading Adventures">
+            <h3>Reading Adventures</h3>
+            <p>Explore amazing stories and improve your reading skills!</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Science Experiments">
+            <h3>Cool Science</h3>
+            <p>Discover the wonders of science through fun experiments!</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Art Projects">
+            <h3>Creative Corner</h3>
+            <p>Let your imagination run wild with fun art projects!</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Fun Learning Adventure | Made with ❤️ for Kids</p>
+    </footer>
+
+    <script>
+        // Add simple animations for buttons
+        document.querySelectorAll('.nav-button').forEach(button => {
+            button.addEventListener('click', function() {
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>
